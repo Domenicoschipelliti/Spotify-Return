@@ -6,25 +6,28 @@ import Ricerca from "./components/Metallica";
 import Player from "./components/Player";
 import Eminem from "./components/Eminem";
 import SearchBar from "./components/SearchBar";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <MyNav />
-      <h2 className="text-light" style={{ marginLeft: " 115px" }}>
-        Queen
-      </h2>
-      <Music />
-      <h2 className="text-light" style={{ marginLeft: " 115px" }}>
-        Metallica
-      </h2>
-      <Ricerca />
-      <h2 className="text-light" style={{ marginLeft: " 115px" }}>
-        Eminem
-      </h2>
-      <Eminem />
+      <BrowserRouter>
+        <MyNav />
+        <h2 className="text-light" style={{ marginLeft: " 115px" }}>
+          Queen
+        </h2>
+        <Music />
+        <h2 className="text-light" style={{ marginLeft: " 115px" }}>
+          Metallica
+        </h2>
+        <Ricerca />
+        <h2 className="text-light" style={{ marginLeft: " 115px" }}>
+          Eminem
+        </h2>
+        <Eminem />
 
-      <Player />
+        <Player />
+      </BrowserRouter>
     </div>
   );
 }

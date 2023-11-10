@@ -9,7 +9,7 @@ import {
 } from "react-bootstrap";
 import SearchBar from "./SearchBar";
 
-const MyNav = () => {
+const MyNav = (data) => {
   return (
     <Container className="mb-3">
       <Row>
@@ -38,7 +38,7 @@ const MyNav = () => {
                   className="d-flex"
                   onSubmit={(e) => {
                     e.preventDefault();
-                    SearchBar();
+                    SearchBar(data);
                   }}
                 >
                   <Form.Control
