@@ -44,7 +44,7 @@ const Music = () => {
                   src={da.album.cover_medium}
                 />
                 <Figure.Caption className="text-light">
-                  {da.title_short}
+                  {da.title_short} <i className="bi bi-suit-heart"></i>
                 </Figure.Caption>
               </Figure>
             </Col>

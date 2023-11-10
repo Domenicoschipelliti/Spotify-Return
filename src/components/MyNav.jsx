@@ -7,6 +7,7 @@ import {
   Navbar,
   Row,
 } from "react-bootstrap";
+import SearchBar from "./SearchBar";
 
 const MyNav = () => {
   return (
@@ -37,6 +38,7 @@ const MyNav = () => {
                   className="d-flex"
                   onSubmit={(e) => {
                     e.preventDefault();
+                    SearchBar();
                   }}
                 >
                   <Form.Control

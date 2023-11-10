@@ -5,6 +5,7 @@ import Music from "./components/Music";
 import Ricerca from "./components/Metallica";
 import Player from "./components/Player";
 import Eminem from "./components/Eminem";
+import SearchBar from "./components/SearchBar";
 
 function App() {
   return (
