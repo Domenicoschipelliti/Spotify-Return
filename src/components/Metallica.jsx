@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Col, Container, Row, Figure } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Ricerca = () => {
   const [data, setData] = useState([]);
@@ -43,12 +44,15 @@ const Ricerca = () => {
           return (
             <Col md={2} key={da.id}>
               <Figure>
-                <Figure.Image
-                  width={171}
-                  height={180}
-                  alt="171x180"
-                  src={da.album.cover_medium}
-                />
+                <Link>
+                  <Figure.Image
+                    width={171}
+                    height={180}
+                    alt="171x180"
+                    src={da.album.cover_medium}
+                  />
+                </Link>
+
                 <Figure.Caption className="text-light">
                   {da.title_short} <i className="bi bi-suit-heart"></i>
                 </Figure.Caption>
