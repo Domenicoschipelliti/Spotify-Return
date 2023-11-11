@@ -33,8 +33,8 @@ const Music = () => {
 
   return (
     <Container>
-      <Row>
-        {data.map((da) => {
+      <Row className="justify-content-center">
+        {data.slice(0, 4).map((da) => {
           return (
             <Col md={2} key={da.id}>
               <Figure>

@@ -2,7 +2,7 @@ import { Card, Col, Container, Row } from "react-bootstrap";
 
 const Player = () => {
   return (
-    <Container fluid style={{ position: "sticky", bottom: "0" }}>
+    <Container fluid style={{ position: "sticky", bottom: "0", padding: "0" }}>
       <Row>
         <Col>
           <Card className="text-center bg-dark">

@@ -13,15 +13,24 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <MyNav />
-        <h2 className="text-light" style={{ marginLeft: " 115px" }}>
+        <h2
+          className="text-light"
+          style={{ display: " flex", justifyContent: "center" }}
+        >
           Queen
         </h2>
         <Music />
-        <h2 className="text-light" style={{ marginLeft: " 115px" }}>
+        <h2
+          className="text-light"
+          style={{ display: " flex", justifyContent: "center" }}
+        >
           Metallica
         </h2>
         <Ricerca />
-        <h2 className="text-light" style={{ marginLeft: " 115px" }}>
+        <h2
+          className="text-light"
+          style={{ display: " flex", justifyContent: "center" }}
+        >
           Eminem
         </h2>
         <Eminem />
